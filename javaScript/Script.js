@@ -20,4 +20,11 @@ $(document).ready(function () {
         loopCount: Infinity,
         startDelay: 1000
     });
+
+
 });
+
+let navbarmoblie = document.querySelector(".navbar");
+document.querySelector('#menu-btn').onclick = () => {
+    navbarmoblie.classList.toggle("active");
+}
