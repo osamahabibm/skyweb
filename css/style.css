@@ -19,7 +19,7 @@ html {
 }
 
 section {
-  padding: 3rem 9%;
+  padding: 2rem 9%;
 }
 
 .icons {
@@ -27,8 +27,8 @@ section {
 }
 
 header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.6))), url(../image/Untitled-3.png);
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.6)), url(../image/Untitled-3.png);
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0))), url(../image/Untitled-2.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../image/Untitled-2.png);
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -45,7 +45,7 @@ header .header-content .content-box {
 
 header .header-content .content-box h1 {
   font-size: 3.2rem !important;
-  font-weight: normal !important;
+  color: #04d7ab;
 }
 
 header .header-content .content-box h4 {
@@ -55,7 +55,7 @@ header .header-content .content-box h4 {
 
 header .lottie {
   max-width: 100%;
-  height: 450px;
+  height: 500px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -75,8 +75,8 @@ header .row {
 
 header .scrolldown {
   position: absolute;
-  bottom: 20px;
-  left: 50%;
+  bottom: -50px;
+  left: 48%;
   width: 40px;
   height: 40px;
   -webkit-transform: translateY(-80px) translateX(-50%);
@@ -88,12 +88,12 @@ header .scrolldown {
 header .scrolldown span {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 50%;
   display: block;
-  width: 80%;
-  height: 80%;
-  border-bottom: 2px solid #fff;
-  border-right: 2px solid #fff;
+  width: 50%;
+  height: 50%;
+  border-bottom: 2px solid #222;
+  border-right: 2px solid #222;
   -webkit-animation: animation 1.5s linear infinite;
           animation: animation 1.5s linear infinite;
   opacity: 0;
@@ -107,11 +107,6 @@ header .scrolldown span:nth-child(1) {
 header .scrolldown span:nth-child(2) {
   -webkit-transform: translate(0, 0);
           transform: translate(0, 0);
-}
-
-header .scrolldown span:nth-child(3) {
-  -webkit-transform: translate(10px, 10px);
-          transform: translate(10px, 10px);
 }
 
 @-webkit-keyframes animation {
@@ -180,7 +175,7 @@ header .scrolldown span:nth-child(3) {
 }
 
 .nav .logo span {
-  color: #4b9394;
+  color: #04d7ab;
 }
 
 .nav .navbar .navItems {
@@ -195,7 +190,7 @@ header .scrolldown span:nth-child(3) {
 }
 
 .nav .navbar .navItems li:hover {
-  border-bottom: 2px solid #4b9394;
+  border-bottom: 5px solid #04d7ab;
 }
 
 .nav .navbar .navItems a {
@@ -213,7 +208,7 @@ header .scrolldown span:nth-child(3) {
           box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
   -webkit-transition: 0.5s all ease-in-out;
   transition: 0.5s all ease-in-out;
-  padding: 3rem 9%;
+  padding: 1.5rem 9%;
 }
 
 .nav.stickyadd a {
@@ -239,6 +234,20 @@ header .scrolldown span:nth-child(3) {
   }
   section {
     padding: 3rem 2rem;
+  }
+  .lottie {
+    height: 350px !important;
+  }
+  .scrolldown {
+    position: absolute;
+    bottom: 0 !important;
+    left: 40%;
+    width: 40px;
+    height: 40px;
+    -webkit-transform: translateY(-80px) translateX(-50%);
+            transform: translateY(-80px) translateX(-50%);
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
   }
 }
 
