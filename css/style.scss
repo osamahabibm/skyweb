@@ -47,7 +47,7 @@ section {
 
 // header section
 header {
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
+  background:
     url(../image/Untitled-2.png);
   height: auto !important;
   background-position: center;
@@ -107,6 +107,39 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  .wahtsapp{
+    p{
+      font-size: 2rem;
+      color: $white;
+    }
+    span{
+      display: block;
+      border: $border;
+      border-radius: 5px;
+      display: flex !important;
+      justify-content: center !important;
+      align-items: center;
+      padding: 10px 20px;
+      &:hover{
+        background: $green;
+        transition: .4s linear;
+        color: $ligth-bg;
+        font-weight: 600;
+      }
+      a{
+        display: block;
+        font-size: 2rem !important;
+        width: 100%;
+        color: $white;
+        direction: ltr;
+        img{
+          width: fit-content;
+            margin-right: 10px;
+
+        }
+      }
+    }
+  }
   .header-content {
     direction: rtl;
     text-align: center;
@@ -226,7 +259,7 @@ header {
   }
 
   section {
-    padding: 3rem 2rem;
+    padding: 3rem;
   }
   .lottie {
     width: 500px !important;
@@ -254,6 +287,7 @@ header {
         padding: 0;
         left:0;
        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+       opacity: .9;
 
     &.active {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -266,10 +300,11 @@ header {
       flex-direction: column;
       margin: 0;
       padding: 0;
-      background: #222;
+      background: rgb(27, 59, 206);
       direction: ltr;
       border-top: $border;
        border-bottom: $border;
+       z-index: 22222;
 
       li {
         margin: 1.5rem;

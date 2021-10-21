@@ -31,8 +31,7 @@ section {
 }
 
 header {
-  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0))), url(../image/Untitled-2.png);
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../image/Untitled-2.png);
+  background: url(../image/Untitled-2.png);
   height: auto !important;
   background-position: center;
   background-size: cover;
@@ -110,6 +109,50 @@ header .row {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+header .row .wahtsapp p {
+  font-size: 2rem;
+  color: #fff;
+}
+
+header .row .wahtsapp span {
+  display: block;
+  border: 0.3rem solid white;
+  border-radius: 5px;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 20px;
+}
+
+header .row .wahtsapp span:hover {
+  background: #04d7ab;
+  -webkit-transition: .4s linear;
+  transition: .4s linear;
+  color: #f3f3f3;
+  font-weight: 600;
+}
+
+header .row .wahtsapp span a {
+  display: block;
+  font-size: 2rem !important;
+  width: 100%;
+  color: #fff;
+  direction: ltr;
+}
+
+header .row .wahtsapp span a img {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-right: 10px;
 }
 
 header .row .header-content {
@@ -255,7 +298,7 @@ header .scrolldown span:nth-child(2) {
     font-weight: normal !important;
   }
   section {
-    padding: 3rem 2rem;
+    padding: 3rem;
   }
   .lottie {
     width: 500px !important;
@@ -285,6 +328,7 @@ header .scrolldown span:nth-child(2) {
     left: 0;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    opacity: .9;
   }
   .navbar.active {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -308,10 +352,11 @@ header .scrolldown span:nth-child(2) {
             flex-direction: column;
     margin: 0;
     padding: 0;
-    background: #222;
+    background: #1b3bce;
     direction: ltr;
     border-top: 0.3rem solid white;
     border-bottom: 0.3rem solid white;
+    z-index: 22222;
   }
   .navbar .navItems li {
     margin: 1.5rem;
