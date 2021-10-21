@@ -16,7 +16,7 @@ $white: #fff;
 $ligth-color: #666;
 $green: #04d7ab;
 $ligth-bg: #f3f3f3;
-$border: 0.1rem solid rgba(0, 0, 0, 0.1);
+$border: 0.3rem solid rgb(255, 255, 255);
 $box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 
 @mixin grid($val) {
@@ -31,8 +31,12 @@ html {
   scroll-behavior: smooth;
 }
 
+body{
+     direction: rtl;
+}
+
 section {
-  padding: 2rem 9%;
+  padding: 1rem 9%;
 }
 
 .icons {
@@ -45,10 +49,64 @@ section {
 header {
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
     url(../image/Untitled-2.png);
-  height: 100vh;
+  height: auto !important;
   background-position: center;
   background-size: cover;
 
+  // nav
+
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  z-index: 1000;
+
+  .logo {
+    a {
+      font-size: 3rem;
+      color: $white;
+      display: block;
+    }
+    span {
+      color: $green;
+    }
+  }
+  .navbar {
+    .navItems {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      li {
+        padding: 10px 20px;
+        font-size: 1.7rem;
+      }
+      a {
+        color: $white;
+        position: relative;
+      }
+    }
+  }
+  .icons {
+    #menu-btn {
+      font-size: 4rem;
+      color: $white;
+    }
+  }
+}
+.row{
+  padding-top: 10rem;
+  width: 100%;
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   .header-content {
     direction: rtl;
     text-align: center;
@@ -66,22 +124,17 @@ header {
       }
     }
   }
-  .lottie {
-    max-width: 100%;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0;
-    padding: 0;
-  }
-  .row {
-    padding-top: 10rem;
-  }
+.lottie{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 700px;
+}
+
+}
+
+ 
   .scrolldown {
-    position: absolute;
-    bottom: -50px;
-    left: 48%;
     width: 40px;
     height: 40px;
     transform: translateY(-80px) translateX(-50%);
@@ -126,61 +179,14 @@ header {
   }
 }
 
-// nav
-.fex {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-.nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  margin: 0;
 
-  .logo {
-    a {
-      font-size: 3rem;
-      color: $white;
-    }
-    span {
-      color: $green;
-    }
-  }
-  .navbar {
-    .navItems {
-      display: flex;
-      li {
-        padding: 10px 20px;
-        font-size: 1.7rem;
-        &:hover {
-          border-bottom: 5px solid $green;
-        }
-      }
-      a {
-        color: $white;
-      }
-    }
-  }
-  .icons {
-    #menu-btn {
-      font-size: 4rem;
-      color: $white;
-    }
-  }
-}
 
 // stickyadd-navbar
 .nav.stickyadd {
   background: #fff !important;
   box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
   transition: 0.5s all ease-in-out;
-  padding: 1.5rem 9%;
+  padding: 1rem 9%;
 }
 
 .nav.stickyadd a {
@@ -196,6 +202,8 @@ header {
   color: $black !important;
 }
 
+// responsive
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
@@ -203,18 +211,27 @@ header {
 
   .header {
     padding: 2rem;
+    .content-box {
+      color: $white;
+
+      h1 {
+        font-size: 2.5rem !important;
+        color: $green;
+      }
+      h4 {
+        font-size: 2rem !important;
+        font-weight: normal !important;
+      }
+    }
   }
 
   section {
     padding: 3rem 2rem;
   }
   .lottie {
-    height: 350px !important;
+    width: 500px !important;
   }
   .scrolldown {
-    position: absolute;
-    bottom: 0 !important;
-    left: 35%;
     width: 40px;
     height: 40px;
     transform: translateY(-80px) translateX(-50%);
@@ -229,16 +246,14 @@ header {
   }
 
   .navbar {
-    position: absolute;
-    top: 99%;
-    left: 0;
-    right: 0;
-    background: $white;
-    border-top: $border;
-    border-bottom: $border;
-    width: 100%;
-    height: auto;
-    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        width: 100%;
+        background: $white !important;
+        position: absolute;
+        top: 99%;
+        margin: 0;
+        padding: 0;
+        left:0;
+       clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 
     &.active {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -251,7 +266,10 @@ header {
       flex-direction: column;
       margin: 0;
       padding: 0;
-      background: #23185e;
+      background: #222;
+      direction: ltr;
+      border-top: $border;
+       border-bottom: $border;
 
       li {
         margin: 1.5rem;
@@ -267,8 +285,14 @@ header {
           font-size: 2.1rem;
         }
       }
+
     }
+ .lottie {
+    width: fit-content !important;
   }
+
+  }
+
   .nav.stickyadd {
     background: #fff !important;
     box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
@@ -276,6 +300,26 @@ header {
     padding: 3rem 2rem;
   }
   .nav.stickyadd .navbar a {
-    color: $white !important;
+    color: $black !important;
+  }
+.lottie {
+    width: 100% !important;
   }
 }
+
+// tab Hover and active
+
+.nav .navbar .navItems li a:hover, .nav .navbar .navItems li a.active{
+  color: $green;
+  border-bottom: 3px solid $green;
+  transition: .2s linear;
+}
+
+@media (max-width: 768px) {
+  .nav .navbar .navItems li a:hover, .nav .navbar .navItems li a.active{
+  color: $green;
+  border-bottom: none;
+  transition: none;
+}
+}
+

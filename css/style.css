@@ -18,8 +18,12 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  direction: rtl;
+}
+
 section {
-  padding: 2rem 9%;
+  padding: 1rem 9%;
 }
 
 .icons {
@@ -29,54 +33,118 @@ section {
 header {
   background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.7)), to(rgba(0, 0, 0, 0))), url(../image/Untitled-2.png);
   background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../image/Untitled-2.png);
-  height: 100vh;
+  height: auto !important;
   background-position: center;
   background-size: cover;
 }
 
-header .header-content {
-  direction: rtl;
-  text-align: center;
-}
-
-header .header-content .content-box {
-  color: #fff;
-}
-
-header .header-content .content-box h1 {
-  font-size: 3.2rem !important;
-  color: #04d7ab;
-}
-
-header .header-content .content-box h4 {
-  font-size: 3rem !important;
-  font-weight: normal !important;
-}
-
-header .lottie {
-  max-width: 100%;
-  height: 500px;
+header .nav {
+  position: fixed;
+  top: 0;
+  left: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
+  margin: 0;
+  z-index: 1000;
+}
+
+header .nav .logo a {
+  font-size: 3rem;
+  color: #fff;
+  display: block;
+}
+
+header .nav .logo span {
+  color: #04d7ab;
+}
+
+header .nav .navbar .navItems {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 0;
-  padding: 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .nav .navbar .navItems li {
+  padding: 10px 20px;
+  font-size: 1.7rem;
+}
+
+header .nav .navbar .navItems a {
+  color: #fff;
+  position: relative;
+}
+
+header .nav .icons #menu-btn {
+  font-size: 4rem;
+  color: #fff;
 }
 
 header .row {
   padding-top: 10rem;
+  width: 100%;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+header .row .header-content {
+  direction: rtl;
+  text-align: center;
+}
+
+header .row .header-content .content-box {
+  color: #fff;
+}
+
+header .row .header-content .content-box h1 {
+  font-size: 3.2rem !important;
+  color: #04d7ab;
+}
+
+header .row .header-content .content-box h4 {
+  font-size: 3rem !important;
+  font-weight: normal !important;
+}
+
+header .row .lottie {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 700px;
 }
 
 header .scrolldown {
-  position: absolute;
-  bottom: -50px;
-  left: 48%;
   width: 40px;
   height: 40px;
   -webkit-transform: translateY(-80px) translateX(-50%);
@@ -145,70 +213,13 @@ header .scrolldown span:nth-child(2) {
   }
 }
 
-.fex {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-}
-
-.nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 100%;
-  margin: 0;
-}
-
-.nav .logo a {
-  font-size: 3rem;
-  color: #fff;
-}
-
-.nav .logo span {
-  color: #04d7ab;
-}
-
-.nav .navbar .navItems {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.nav .navbar .navItems li {
-  padding: 10px 20px;
-  font-size: 1.7rem;
-}
-
-.nav .navbar .navItems li:hover {
-  border-bottom: 5px solid #04d7ab;
-}
-
-.nav .navbar .navItems a {
-  color: #fff;
-}
-
-.nav .icons #menu-btn {
-  font-size: 4rem;
-  color: #fff;
-}
-
 .nav.stickyadd {
   background: #fff !important;
   -webkit-box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
           box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
   -webkit-transition: 0.5s all ease-in-out;
   transition: 0.5s all ease-in-out;
-  padding: 1.5rem 9%;
+  padding: 1rem 9%;
 }
 
 .nav.stickyadd a {
@@ -232,16 +243,24 @@ header .scrolldown span:nth-child(2) {
   .header {
     padding: 2rem;
   }
+  .header .content-box {
+    color: #fff;
+  }
+  .header .content-box h1 {
+    font-size: 2.5rem !important;
+    color: #04d7ab;
+  }
+  .header .content-box h4 {
+    font-size: 2rem !important;
+    font-weight: normal !important;
+  }
   section {
     padding: 3rem 2rem;
   }
   .lottie {
-    height: 350px !important;
+    width: 500px !important;
   }
   .scrolldown {
-    position: absolute;
-    bottom: 0 !important;
-    left: 40%;
     width: 40px;
     height: 40px;
     -webkit-transform: translateY(-80px) translateX(-50%);
@@ -257,15 +276,13 @@ header .scrolldown span:nth-child(2) {
     cursor: pointer;
   }
   .navbar {
+    width: 100%;
+    background: #fff !important;
     position: absolute;
     top: 99%;
+    margin: 0;
+    padding: 0;
     left: 0;
-    right: 0;
-    background: #fff;
-    border-top: 0.1rem solid rgba(0, 0, 0, 0.1);
-    border-bottom: 0.1rem solid rgba(0, 0, 0, 0.1);
-    width: 100%;
-    height: auto;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
   }
@@ -291,7 +308,10 @@ header .scrolldown span:nth-child(2) {
             flex-direction: column;
     margin: 0;
     padding: 0;
-    background: #23185e;
+    background: #222;
+    direction: ltr;
+    border-top: 0.3rem solid white;
+    border-bottom: 0.3rem solid white;
   }
   .navbar .navItems li {
     margin: 1.5rem;
@@ -312,6 +332,11 @@ header .scrolldown span:nth-child(2) {
     color: #fff !important;
     font-size: 2.1rem;
   }
+  .navbar .lottie {
+    width: -webkit-fit-content !important;
+    width: -moz-fit-content !important;
+    width: fit-content !important;
+  }
   .nav.stickyadd {
     background: #fff !important;
     -webkit-box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
@@ -321,7 +346,26 @@ header .scrolldown span:nth-child(2) {
     padding: 3rem 2rem;
   }
   .nav.stickyadd .navbar a {
-    color: #fff !important;
+    color: #222 !important;
+  }
+  .lottie {
+    width: 100% !important;
+  }
+}
+
+.nav .navbar .navItems li a:hover, .nav .navbar .navItems li a.active {
+  color: #04d7ab;
+  border-bottom: 3px solid #04d7ab;
+  -webkit-transition: .2s linear;
+  transition: .2s linear;
+}
+
+@media (max-width: 768px) {
+  .nav .navbar .navItems li a:hover, .nav .navbar .navItems li a.active {
+    color: #04d7ab;
+    border-bottom: none;
+    -webkit-transition: none;
+    transition: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

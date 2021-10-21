@@ -13,12 +13,12 @@
   </head>
   <body>
     <header class="header">
-      <section class="nav sticky" id="nav">
+      <section class="nav sticky fex" id="nav">
       <div class="navbar" >
         <ul class="navItems" id="navItems">
           <li class="active"><a href="index.html">الرئيسية</a></li>
               <li><a href="service.html"> الخدمات</a></li>
-              <li><a href="os.html">من نحن</a></li>
+              <li><a href="#">من نحن</a></li>
                 <li><a href="#">تواصل معنا</a></li>
         </ul>
       </div>
@@ -29,10 +29,9 @@
       <a href="#">Sky<span>Web</span></a>
       </div>
     </section>
-        <div class="row">
-   <div class="header-content">
-              <div class="row-2">
-                <div class="col">
+         <div class="header-content">
+              <div class="row">
+                <div class="col text-center">
                   <div class="content-box">
                         <h4> مرحباً بكم معنا في موقع</h4>
                     <h1><span class="element"></span></h1>
@@ -40,30 +39,33 @@
                 </div>
               </div>
             </div>
+          </div>
             <lottie-player
-              class="lottie"
+            class="lottie"
               src="https://assets10.lottiefiles.com/packages/lf20_pwohahvd.json"
               speed="1"
               loop
               autoplay
             ></lottie-player>
-               <div class="scrolldown">
+            <div class="scrolldown">
               <span></span>
                 <span></span>
                   <span></span>
             </div>
-          </div>
-
-            
-       
-         
     </header>
 
 
 
     <!-- <section style="height: 100vh;"></section> -->
 <script>
-
+  const currentlocation = location.href;
+const menuItem = document.querySelectorAll('a')
+const menulength = menuItem.length;
+for (let i = 0; i < menulength; i++) {
+    if (menuItem[i].href === currentlocation) {
+        menuItem[i].className = "active";
+    }
+}
 
 </script>
     <!-- jQuery -->
