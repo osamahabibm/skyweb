@@ -184,7 +184,9 @@ header .row .lottie {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 700px;
+  width: 550px;
+  position: relative;
+  bottom: 50px;
 }
 
 header .scrolldown {
@@ -302,6 +304,8 @@ header .scrolldown span:nth-child(2) {
   }
   .lottie {
     width: 500px !important;
+    position: relative;
+    bottom: 0 !important;
   }
   .scrolldown {
     width: 40px;

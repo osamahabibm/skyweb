@@ -16,7 +16,7 @@ $(document).ready(function () {
         smartBackspace: true,
         typeSpeed: 100,
         baceSpeed: 100,
-        loop: false,
+        loop: true,
         loopCount: Infinity,
         startDelay: 1000
     });

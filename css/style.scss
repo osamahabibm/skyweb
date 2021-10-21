@@ -161,7 +161,9 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 700px;
+  width: 550px;
+  position: relative;
+  bottom: 50px;
 }
 
 }
@@ -263,6 +265,8 @@ header {
   }
   .lottie {
     width: 500px !important;
+     position: relative;
+  bottom: 0 !important;
   }
   .scrolldown {
     width: 40px;
