@@ -385,7 +385,7 @@ header {
   .content {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     flex-direction: column;
     width: 100%;
     h1 {
@@ -413,6 +413,13 @@ header {
 //  responsiv about
 
 @media (max-width: 450px) {
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+  }
   .about {
     @include grid(250px);
   }

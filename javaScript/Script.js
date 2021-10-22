@@ -37,7 +37,11 @@ $(document).ready(function () {
             menuItem[i].className = "active";
         }
     }
-
+    // navbar onscroll
+    window.onscroll = () => {
+        navbarmoblie.classList.remove("active");
+    }
+    
 
 });
 
