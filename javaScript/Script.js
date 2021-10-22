@@ -29,18 +29,22 @@ $(document).ready(function () {
     }
 
     // tab
-    const currentlocation = location.href;
-    const menuItem = document.querySelectorAll('a')
-    const menulength = menuItem.length;
-    for (let i = 0; i < menulength; i++) {
-        if (menuItem[i].href === currentlocation) {
-            menuItem[i].className = "active";
-        }
+    var btncontainer = document.getElementById("navItems");
+    var btns = btncontainer.getElementsByClassName("btn")
+    for (var i = 0; i < btns.length; i++){
+        btns[i].addEventListener('click', function () {
+            var current = document.getElementsByClassName("activee");
+            current[0].className = current[0].className.replace(" activee");
+            this.className += " activee";
+        });
     }
+  
     // navbar onscroll
     window.onscroll = () => {
         navbarmoblie.classList.remove("active");
     }
+
+    
     
 
 });
