@@ -147,12 +147,15 @@ header {
           width: 100%;
           color: $white;
           direction: ltr;
-          letter-spacing: 2px;
           font-weight: 600;
+          letter-spacing: 1px;
+          justify-content: center;
           ion-icon {
             display: flex;
             width: 40px;
-            padding-top: 2px;
+            padding: 0 !important;
+            margin: 0;
+            padding-top: 2px !important;
             color: #ffffff;
           }
         }
@@ -198,8 +201,8 @@ header {
         display: block;
         width: 50%;
         height: 50%;
-        border-bottom: 2px solid $black;
-        border-right: 2px solid $black;
+        border-bottom: 2px solid #075cfc;
+        border-right: 2px solid #075cfc;
         animation: animation 1.5s linear infinite;
         opacity: 0;
       }
@@ -329,9 +332,8 @@ header {
       flex-direction: column;
       margin: 0;
       padding: 0;
-      background: rgb(27, 59, 206);
+      background: #073da1;
       direction: ltr;
-      border-top: $border;
       border-bottom: $border;
       z-index: 22222;
 
@@ -391,8 +393,7 @@ header {
 .about {
   @include grid(350px);
   max-width: 100%;
-  height: 70vh;
-  padding: 1rem 9%;
+  padding: 1rem 9% !important;
   .content {
     display: flex;
     justify-content: center;
@@ -422,6 +423,11 @@ header {
 }
 // About Section End
 //  responsiv about
+@media (max-width: 768px) {
+  .about {
+    padding: 3rem 0 !important;
+  }
+}
 
 @media (max-width: 450px) {
   .content {
@@ -430,6 +436,8 @@ header {
     align-items: center !important;
     flex-direction: column;
     width: 100%;
+    height: auto;
+    padding: 20px;
   }
   .about {
     @include grid(250px);
@@ -443,4 +451,70 @@ header {
       }
     }
   }
+}
+
+//Section Servies
+
+.service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #075cfc; //linear-gradient(#ffffff, #cfcbd2, #075cfc, #075cfc);
+  height: auto;
+
+  .container {
+    @include grid(30rem);
+    gap: 1rem;
+    width: 100%;
+
+    .box {
+      background: transparent;
+      position: relative;
+      padding: 40px;
+      color: $white;
+      border-radius: 0.5rem;
+      box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+
+      .fas {
+        color: $white;
+        margin-bottom: 1.5rem;
+      }
+      h4 {
+        margin-bottom: 1.5rem;
+        font-size: 1.7rem;
+        color: $white;
+      }
+      p {
+        margin-bottom: 1.5rem;
+        line-height: 25px;
+        letter-spacing: 1px;
+        color: $white;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .service {
+    padding: 3rem 0;
+  }
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  background: rgba(141, 45, 45, 0.5);
+  top: 0;
+  left: -120%;
+  width: 100%;
+  height: 100%;
+  transform: skew(20deg);
+  opacity: 0.5;
+  transition: ease-in-out 0.5s;
+  overflow: hidden;
+}
+
+.box:hover::before {
+  left: 120%;
 }
