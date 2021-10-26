@@ -1,0 +1,209 @@
+// header section Start
+header {
+  background:// linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)),
+    url(../image/Untitled-2.png);
+  height: auto !important;
+  background-position: center;
+  background-size: cover;
+
+  // nav
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    z-index: 1000;
+
+    .logo {
+      a {
+        font-size: 3rem;
+        color: $white;
+        display: block;
+      }
+      span {
+        color: $green;
+      }
+    }
+    .navbar {
+      .navItems {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0;
+        padding: 0;
+
+        li {
+          padding: 10px 20px;
+          font-size: 1.7rem;
+        }
+        a {
+          color: $white;
+          position: relative;
+        }
+      }
+    }
+    .icons {
+      #menu-btn {
+        font-size: 4rem;
+        color: $white;
+      }
+    }
+  }
+  // end nav
+
+  // Start section header
+  .row {
+    padding-top: 10rem;
+    width: 100%;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .wahtsapp {
+      position: relative;
+      p {
+        font-size: 2rem;
+        color: $white;
+      }
+      .number-whatsapp {
+        position: relative;
+        display: block;
+        border: $border;
+        border-radius: 20px;
+        padding: 1rem 0;
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        transition: 0.8s ease-in-out;
+        overflow: hidden;
+
+        &:hover {
+          background: #4e9f3d;
+          color: $white;
+          border-radius: 0px;
+        }
+
+        a {
+          display: flex;
+          font-size: 2rem !important;
+          width: 100%;
+          color: $white;
+          direction: ltr;
+          font-weight: 600;
+          letter-spacing: 1px;
+          justify-content: center;
+          padding-right: 10px;
+          ion-icon {
+            display: flex;
+            width: 40px;
+            padding: 0 !important;
+            margin: 0;
+            padding-top: 2px !important;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .header-content {
+      direction: rtl;
+      text-align: center;
+
+      .content-box {
+        color: $white;
+
+        h1 {
+          font-size: 3.2rem !important;
+          color: $green;
+        }
+        h4 {
+          font-size: 3rem !important;
+          font-weight: normal !important;
+        }
+      }
+    }
+    .lottie {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 550px;
+      position: relative;
+      bottom: 50px;
+    }
+
+    .scrolldown {
+      width: 40px;
+      height: 40px;
+      transform: translateY(-80px) translateX(-50%);
+      transform: rotate(45deg);
+      cursor: pointer;
+
+      span {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        display: block;
+        width: 50%;
+        height: 50%;
+        border-bottom: 2px solid #075cfc;
+        border-right: 2px solid #075cfc;
+        animation: animation 1.5s linear infinite;
+        opacity: 0;
+      }
+
+      span:nth-child(1) {
+        transform: translate(-10px, -10px);
+      }
+      span:nth-child(2) {
+        transform: translate(0, 0);
+      }
+    }
+    @keyframes animation {
+      0% {
+        top: -5px;
+        left: -5px;
+        opacity: 0;
+      }
+      25% {
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+      }
+      100% {
+        top: 5px;
+        left: 5px;
+        opacity: 0;
+      }
+    }
+  }
+}
+// header section End
+
+// stickyadd-navbar Start
+.nav.stickyadd {
+  background: #fff !important;
+  box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
+  transition: 0.5s all ease-in-out;
+  padding: 1rem 9%;
+  a {
+    color: $black !important;
+    transition: 0.5s all;
+  }
+  #menu-btn {
+    color: $black !important;
+  }
+}
+// stickyadd-navbar End
+
+// tab Hover and active
+.nav .navbar .navItems li a:hover,
+.nav .navbar .navItems li a.activee {
+  color: $green;
+  border-bottom: 3px solid $green;
+  transition: 0.2s linear;
+}
+// tab Hover and active

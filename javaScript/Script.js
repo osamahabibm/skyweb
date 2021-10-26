@@ -22,7 +22,6 @@ $(document).ready(function () {
     });
 
     // small nav
-
     let navbarmoblie = document.querySelector(".navbar");
     document.querySelector('#menu-btn').onclick = () => {
         navbarmoblie.classList.toggle("active");
@@ -43,9 +42,6 @@ $(document).ready(function () {
     window.onscroll = () => {
         navbarmoblie.classList.remove("active");
     }
-
-    
-    
 
 });
 

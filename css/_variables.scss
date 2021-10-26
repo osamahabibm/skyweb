@@ -1,0 +1,54 @@
+// Global Sit Start
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;600;700;900&display=swap");
+* {
+  font-family: "Cairo", sans-serif;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style: none;
+  text-transform: capitalize;
+  transition: 0.2s linear;
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #075cfc;
+}
+
+$black: #222;
+$white: #fff;
+$ligth-color: #666;
+$green: #04d7ab;
+$ligth-bg: #f3f3f3;
+$border: 0.3rem solid rgb(255, 255, 255);
+$box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+
+@mixin grid($val) {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax($val, 1fr));
+  gap: 1.5rem;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  direction: rtl;
+}
+
+section {
+  padding: 1rem 9%;
+}
+
+.icons {
+  display: none;
+}
+
+// Global Sit End

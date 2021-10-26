@@ -1,0 +1,154 @@
+// responsive
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem;
+    .content-box {
+      color: $white;
+
+      h1 {
+        font-size: 2.5rem !important;
+        color: $green;
+      }
+      h4 {
+        font-size: 2rem !important;
+        font-weight: normal !important;
+      }
+    }
+  }
+
+  section {
+    padding: 2rem;
+  }
+  .lottie {
+    width: 500px !important;
+    position: relative;
+    bottom: 0 !important;
+  }
+  .scrolldown {
+    width: 40px;
+    height: 40px;
+    transform: translateY(-80px) translateX(-50%);
+    transform: rotate(45deg);
+  }
+  .nav.stickyadd {
+    background: #fff !important;
+    box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
+    transition: 0.5s all ease-in-out;
+    padding: 2rem;
+  }
+  .nav.stickyadd .navbar a {
+    color: $black !important;
+  }
+}
+
+@media (max-width: 768px) {
+  .icons {
+    display: block;
+    cursor: pointer;
+  }
+
+  .navbar {
+    width: 100%;
+    background: $white !important;
+    position: absolute;
+    top: 99%;
+    margin: 0;
+    padding: 0;
+    left: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+
+    &.active {
+      clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+      transition: 0.4s linear;
+    }
+    .navItems {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 0;
+      padding: 0;
+      background: #073da1;
+      direction: ltr;
+      border-bottom: $border;
+      z-index: 22222;
+
+      li {
+        margin: 1.5rem;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        color: $white;
+
+        a {
+          color: $white !important;
+          font-size: 2.1rem;
+        }
+      }
+    }
+  }
+  .nav.stickyadd {
+    background: #fff !important;
+    box-shadow: 0 1px 8px 3px rgba(0, 0, 0, 0.05);
+    transition: 0.5s all ease-in-out;
+    padding: 2rem;
+  }
+  .nav.stickyadd .navbar a {
+    color: $white !important;
+  }
+
+  .lottie {
+    width: 100% !important;
+  }
+  .about {
+    padding: 3rem 2rem !important;
+  }
+
+  // active navbar
+  .nav .navbar .navItems li a:hover,
+  .nav .navbar .navItems li a.activee {
+    color: $green;
+    border-bottom: none;
+    transition: none;
+  }
+
+  //  responsiv about
+  .about {
+    padding: 3rem 0 !important;
+  }
+  //  responsiv about
+  .service {
+    padding: 3rem 0;
+  }
+}
+
+@media (max-width: 450px) {
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center !important;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+  .about {
+    @include grid(250px);
+    .img-about {
+      max-width: 100%;
+
+      img {
+        display: flex;
+        width: 100% !important;
+        object-fit: cover;
+      }
+    }
+  }
+}
