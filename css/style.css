@@ -687,6 +687,9 @@ header .row .scrolldown span:nth-child(2) {
   border: 1px solid #5441df;
   border-radius: 5px;
   color: #222;
+        display: flex;
+      justify-content: center;
+      align-items: center;
 }
 
 #contactUs .container .textbox i {
@@ -735,6 +738,7 @@ header .row .scrolldown span:nth-child(2) {
   border-radius: 5px;
   background: transparent;
   border: 1px solid #5441df !important;
+  
 }
 
 #contactUs .container .textbox-area textarea {
