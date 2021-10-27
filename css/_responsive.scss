@@ -128,10 +128,16 @@
   //  responsiv about
   .about {
     padding: 3rem 0 !important;
+    .content {
+      padding: 0 2rem !important;
+    }
   }
   //  responsiv about
   .service {
     padding: 3rem 0;
+    .container {
+      padding: 0 1rem;
+    }
   }
 }
 

@@ -1,0 +1,66 @@
+// Footer section Start //
+.footer {
+  background: $ligth-bg;
+
+  .box-container {
+    @include grid(25rem);
+
+    .box {
+      h1 {
+        font-family: "Festive", cursive;
+        font-size: 4rem;
+        padding-top: 2.5rem;
+        span {
+          color: $green;
+          font-family: "Festive", cursive;
+        }
+      }
+      p {
+        font-size: 1.5rem;
+        color: $ligth-color;
+        padding: 0.5rem;
+      }
+
+      a {
+        font-size: 1.4rem;
+        color: $ligth-color;
+        padding: 1rem 0;
+        display: block;
+
+        &:hover {
+          color: $stander-color;
+
+          i {
+            padding-right: 2rem;
+          }
+        }
+
+        i {
+          padding-left: 0.5rem;
+          color: $green;
+        }
+      }
+    }
+  }
+}
+
+.credit {
+  background: $stander-color;
+  color: $white;
+  direction: ltr;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  h3 {
+    font-size: 1.5rem;
+    span {
+      color: $green;
+      font-family: "Festive", cursive;
+    }
+  }
+  h5 {
+    font-size: 1.2rem;
+  }
+}
+// Footer section End //

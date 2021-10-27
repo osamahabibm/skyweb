@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@200;400;600;700;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Festive&display=swap");
 * {
   font-family: "Cairo", sans-serif;
   outline: none;
@@ -67,10 +68,12 @@ header .nav .logo a {
   font-size: 3rem;
   color: #fff;
   display: block;
+  font-family: "Festive", cursive;
 }
 
 header .nav .logo span {
   color: #04d7ab;
+  font-family: "Festive", cursive;
 }
 
 header .nav .navbar .navItems {
@@ -605,8 +608,14 @@ header .row .scrolldown span:nth-child(2) {
   .about {
     padding: 3rem 0 !important;
   }
+  .about .content {
+    padding: 0 2rem !important;
+  }
   .service {
     padding: 3rem 0;
+  }
+  .service .container {
+    padding: 0 1rem;
   }
 }
 
@@ -713,7 +722,6 @@ header .row .scrolldown span:nth-child(2) {
   text-align: center;
   color: #222;
   padding: 0;
-  margin-left: 3px;
   margin-right: 2px;
   display: inline-block;
 }
@@ -790,5 +798,84 @@ header .row .scrolldown span:nth-child(2) {
   color: #fff;
   border-radius: 5px;
   background: #5441df;
+}
+
+.footer {
+  background: #f3f3f3;
+}
+
+.footer .box-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(25rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+  gap: 1.5rem;
+}
+
+.footer .box-container .box h1 {
+  font-family: "Festive", cursive;
+  font-size: 4rem;
+  padding-top: 2.5rem;
+}
+
+.footer .box-container .box h1 span {
+  color: #04d7ab;
+  font-family: "Festive", cursive;
+}
+
+.footer .box-container .box p {
+  font-size: 1.5rem;
+  color: #666;
+  padding: 0.5rem;
+}
+
+.footer .box-container .box a {
+  font-size: 1.4rem;
+  color: #666;
+  padding: 1rem 0;
+  display: block;
+}
+
+.footer .box-container .box a:hover {
+  color: #5441df;
+}
+
+.footer .box-container .box a:hover i {
+  padding-right: 2rem;
+}
+
+.footer .box-container .box a i {
+  padding-left: 0.5rem;
+  color: #04d7ab;
+}
+
+.credit {
+  background: #5441df;
+  color: #fff;
+  direction: ltr;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.credit h3 {
+  font-size: 1.5rem;
+}
+
+.credit h3 span {
+  color: #04d7ab;
+  font-family: "Festive", cursive;
+}
+
+.credit h5 {
+  font-size: 1.2rem;
 }
 /*# sourceMappingURL=style.css.map */
