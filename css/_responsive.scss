@@ -108,7 +108,7 @@
     width: 100% !important;
   }
   .about {
-    padding: 3rem 2rem !important;
+    padding: 3rem 4rem !important;
     .header-about {
       font-size: 2.2rem;
       font-weight: 700;
@@ -138,12 +138,12 @@
 @media (max-width: 450px) {
   .content {
     display: flex;
-    justify-content: center;
-    align-items: center !important;
+    justify-content: flex-start;
+    align-items: flex-start !important;
     flex-direction: column;
     width: 100%;
     height: auto;
-    padding: 20px;
+    padding: 20px !important;
   }
   .about {
     @include grid(250px);
@@ -154,6 +154,7 @@
         display: flex;
         width: 100% !important;
         object-fit: cover;
+        padding: 10px;
       }
     }
   }

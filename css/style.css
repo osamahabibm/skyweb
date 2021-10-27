@@ -585,7 +585,7 @@ header .row .scrolldown span:nth-child(2) {
     width: 100% !important;
   }
   .about {
-    padding: 3rem 2rem !important;
+    padding: 3rem 4rem !important;
   }
   .about .header-about {
     font-size: 2.2rem;
@@ -613,19 +613,19 @@ header .row .scrolldown span:nth-child(2) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: flex-start !important;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     width: 100%;
     height: auto;
-    padding: 20px;
+    padding: 20px !important;
   }
   .about {
     display: -ms-grid;
@@ -644,6 +644,7 @@ header .row .scrolldown span:nth-child(2) {
     width: 100% !important;
     -o-object-fit: cover;
        object-fit: cover;
+    padding: 10px;
   }
 }
 
