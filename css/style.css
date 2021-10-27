@@ -639,4 +639,135 @@ header .row .scrolldown span:nth-child(2) {
        object-fit: cover;
   }
 }
+
+#contactUs {
+  padding: 3rem 9% !important;
+  background-position: center;
+  background-size: cover;
+  height: 70vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #000;
+}
+
+#contactUs .container {
+  width: 280px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #fff;
+  border-radius: 5px;
+}
+
+#contactUs .container .header-contactUs {
+  font-size: 2rem;
+  border-bottom: 4px solid #04d7ab;
+  margin-bottom: 30px;
+  padding: 13px 0;
+  color: #5441df;
+}
+
+#contactUs .container .textbox {
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border: 1px solid #5441df;
+  border-radius: 5px;
+  color: #222;
+}
+
+#contactUs .container .textbox i {
+  width: 26px;
+  text-align: center;
+  color: #222;
+  padding: 0;
+  margin: 0;
+}
+
+#contactUs .container .textbox input {
+  background: none;
+  color: #222;
+  font-size: 18px;
+  margin: 0 10px;
+}
+
+#contactUs .container .textbox input::-webkit-input-placeholder {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+#contactUs .container .textbox input:-ms-input-placeholder {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+#contactUs .container .textbox input::-ms-input-placeholder {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+#contactUs .container .textbox input::placeholder {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+#contactUs .container .textbox-area {
+  width: 100%;
+  overflow: hidden;
+  font-size: 20px;
+  padding: 8px 0;
+  margin: 8px 0;
+  border-radius: 5px;
+  background: transparent;
+  border: 1px solid #5441df !important;
+}
+
+#contactUs .container .textbox-area textarea {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+}
+
+#contactUs .container .textbox-area textarea::-webkit-input-placeholder {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+#contactUs .container .textbox-area textarea:-ms-input-placeholder {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+#contactUs .container .textbox-area textarea::-ms-input-placeholder {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+#contactUs .container .textbox-area textarea::placeholder {
+  padding: 10px;
+  font-size: 1.5rem;
+}
+
+#contactUs .container .btn {
+  width: 100%;
+  padding: 8px 0;
+  margin: 8px 0;
+  font-size: 1.5rem;
+  color: #fff;
+  border-radius: 5px;
+  background: #5441df;
+}
 /*# sourceMappingURL=style.css.map */

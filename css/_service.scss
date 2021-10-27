@@ -16,7 +16,7 @@
     width: 100%;
 
     .box {
-      background: #5441df;
+      background: $stander-color;
       position: relative;
       padding: 40px;
       color: $white;
@@ -33,7 +33,7 @@
         height: 70px;
         width: 70px;
         border: 0.5rem solid white;
-        background: #5441df;
+        background: $stander-color;
         border-radius: 50%;
         color: #fff;
         margin-bottom: 1.5rem;
@@ -50,7 +50,7 @@
         width: 70px;
         font-size: 35px;
         border: 0.5rem solid white;
-        background: #5441df;
+        background: $stander-color;
         border-radius: 50%;
         color: #fff;
         margin-bottom: 1.5rem;
