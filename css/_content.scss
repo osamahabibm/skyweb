@@ -1,15 +1,19 @@
 #contactUs {
   padding: 3rem 9% !important;
+  // background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)),
+  //   url(../image/Untitled-1.gif);
   background-position: center;
   background-size: cover;
-  height: 70vh;
-  display: flex;
   color: #000;
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
   .container {
     width: 280px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    display: flex !important;
+    justify-content: flex-end !important;
+    align-items: center !important;
     flex-direction: column;
     background: $white;
     border-radius: 5px;
