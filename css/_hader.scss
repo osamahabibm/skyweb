@@ -66,21 +66,22 @@ header {
     flex-direction: column;
     .wahtsapp {
       position: relative;
+      display: block;
       p {
-        font-size: 2rem;
+        font-size: 2.2rem;
         color: $white;
       }
       .number-whatsapp {
         position: relative;
         display: block;
-        border: $border;
+        border: 2px solid $green;
         border-radius: 20px;
         padding: 1rem 0;
+        margin: 0;
         display: flex !important;
         justify-content: center !important;
         align-items: center !important;
         transition: 0.8s ease-in-out;
-        overflow: hidden;
 
         &:hover {
           background: #4e9f3d;
@@ -94,10 +95,9 @@ header {
           width: 100%;
           color: $white;
           direction: ltr;
-          font-weight: 600;
           letter-spacing: 1px;
           justify-content: center;
-          padding-right: 10px;
+          margin: 0;
           ion-icon {
             display: flex;
             width: 40px;

@@ -123,19 +123,21 @@ header .row {
 
 header .row .wahtsapp {
   position: relative;
+  display: block;
 }
 
 header .row .wahtsapp p {
-  font-size: 2rem;
+  font-size: 2.2rem;
   color: #fff;
 }
 
 header .row .wahtsapp .number-whatsapp {
   position: relative;
   display: block;
-  border: 0.3rem solid white;
+  border: 2px solid #04d7ab;
   border-radius: 20px;
   padding: 1rem 0;
+  margin: 0;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -147,7 +149,6 @@ header .row .wahtsapp .number-whatsapp {
           align-items: center !important;
   -webkit-transition: 0.8s ease-in-out;
   transition: 0.8s ease-in-out;
-  overflow: hidden;
 }
 
 header .row .wahtsapp .number-whatsapp:hover {
@@ -164,12 +165,11 @@ header .row .wahtsapp .number-whatsapp a {
   width: 100%;
   color: #fff;
   direction: ltr;
-  font-weight: 600;
   letter-spacing: 1px;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding-right: 10px;
+  margin: 0;
 }
 
 header .row .wahtsapp .number-whatsapp a ion-icon {
@@ -694,7 +694,9 @@ header .row .scrolldown span:nth-child(2) {
   text-align: center;
   color: #222;
   padding: 0;
-  margin: 0;
+  margin-left: 3px;
+  margin-right: 2px;
+  display: inline-block;
 }
 
 #contactUs .container .textbox input {
