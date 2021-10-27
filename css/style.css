@@ -340,10 +340,11 @@ header .row .scrolldown span:nth-child(2) {
           flex-direction: column;
 }
 
-.about .content h1 {
+.about .content .header-about {
   font-size: 2.2rem;
   font-weight: 700;
   position: relative;
+  display: block;
 }
 
 .about .content p {
@@ -586,6 +587,12 @@ header .row .scrolldown span:nth-child(2) {
   .about {
     padding: 3rem 2rem !important;
   }
+  .about .header-about {
+    font-size: 2.2rem;
+    font-weight: 700;
+    position: relative;
+    display: block;
+  }
   .nav .navbar .navItems li a:hover,
   .nav .navbar .navItems li a.activee {
     color: #04d7ab;
@@ -687,9 +694,15 @@ header .row .scrolldown span:nth-child(2) {
   border: 1px solid #5441df;
   border-radius: 5px;
   color: #222;
-        display: flex;
-      justify-content: center;
-      align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 #contactUs .container .textbox i {
@@ -738,7 +751,6 @@ header .row .scrolldown span:nth-child(2) {
   border-radius: 5px;
   background: transparent;
   border: 1px solid #5441df !important;
-  
 }
 
 #contactUs .container .textbox-area textarea {
