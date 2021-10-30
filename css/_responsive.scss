@@ -115,14 +115,6 @@
       position: relative;
       display: block;
     }
-    #contactUs {
-      .container {
-        display: flex;
-        justify-content: center !important;
-        align-items: center;
-        flex-direction: column;
-      }
-    }
   }
 
   // active navbar
@@ -145,6 +137,28 @@
     padding: 3rem 0;
     .container {
       padding: 0 1rem;
+    }
+  }
+
+  #contactUs {
+    display: flex;
+    justify-content: space-between !important;
+    align-items: center;
+
+    .container {
+      align-items: center !important;
+    }
+  }
+}
+
+@media (max-width: 620px) {
+  #contactUs {
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+
+    .container {
+      align-items: center !important;
     }
   }
 }
