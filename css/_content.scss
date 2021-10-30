@@ -95,13 +95,14 @@
     h3 {
       font-size: 2rem;
       padding-right: 1.4rem;
+      padding-left: 1.4rem;
     }
     .box-services {
       display: flex;
       justify-content: flex-start;
       i {
         display: block;
-        margin-top: 3rem;
+        margin-top: 2.5rem;
         font-size: large;
         padding-left: 1.4rem;
         padding-right: 1.4rem;
@@ -114,11 +115,11 @@
           color: $white !important;
           p {
             font-size: 2rem;
-
             span {
               color: $white;
               font-size: 1.5rem;
-              padding: 1rem;
+              display: block;
+              padding-top: 1.5rem;
             }
           }
         }

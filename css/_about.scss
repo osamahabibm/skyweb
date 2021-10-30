@@ -13,6 +13,7 @@
       font-weight: 700;
       position: relative;
       display: flex !important;
+      color: $stander-color;
     }
     p {
       font-size: 1.7rem;
@@ -23,7 +24,7 @@
   .img-about {
     max-width: 100%;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     padding-top: 5rem;
 

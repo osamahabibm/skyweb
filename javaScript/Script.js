@@ -10,16 +10,7 @@ $(document).ready(function () {
         }
     });
 
-    // Typed with Span
-    var typed = new Typed(".element", {
-        strings: ["SkyWeb", "تطوير ويب", "تصميم ويب"],
-        smartBackspace: true,
-        typeSpeed: 100,
-        baceSpeed: 100,
-        loop: true,
-        loopCount: Infinity,
-        startDelay: 1000
-    });
+
 
     // small nav
     let navbarmoblie = document.querySelector(".navbar");
@@ -27,7 +18,7 @@ $(document).ready(function () {
         navbarmoblie.classList.toggle("active");
     }
 
-    // tab
+    // tab activee
     var btncontainer = document.getElementById("navItems");
     var btns = btncontainer.getElementsByClassName("btn")
     for (var i = 0; i < btns.length; i++){
@@ -43,6 +34,32 @@ $(document).ready(function () {
         navbarmoblie.classList.remove("active");
     }
 
+      // Typed with Span en
+      var typed_en = new Typed(".element-en", {
+        strings: ["SkyWeb", "web development", "web design"],
+        smartBackspace: true,
+        typeSpeed: 100,
+        baceSpeed: 100,
+        loop: true,
+        loopCount: Infinity,
+          startDelay: 1000,
+    });
+
+    
+
 });
 
+    // Typed with Span ar
+    var typed_ar = new Typed(".element-ar", {
+        strings: ["SkyWeb", "تطوير ويب", "تصميم ويب"],
+        smartBackspace: true,
+        typeSpeed: 100,
+        baceSpeed: 100,
+        loop: true,
+        loopCount: Infinity,
+        startDelay: 1000,
+    });
+
+
+  
 
