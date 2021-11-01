@@ -44,6 +44,10 @@ header {
         a {
           color: $white;
           position: relative;
+          i {
+            padding-left: 0.5rem;
+            padding-right: 0.5rem;
+          }
         }
       }
     }
