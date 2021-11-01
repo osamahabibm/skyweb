@@ -36,6 +36,48 @@ section {
   display: none;
 }
 
+.dropbtn {
+  background-color: transparent;
+  color: white;
+  padding: 0;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 100%;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  border-radius: 4px;
+  color: #000;
+}
+
+.dropdown-content a {
+  color: black !important;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.dropdown-content a:hover {
+  border-bottom: none !important;
+}
+
+.show {
+  display: block;
+}
+
 header {
   background: url(../image/Untitled-2.png);
   height: auto !important;
@@ -132,7 +174,7 @@ header .row .wahtsapp p {
 header .row .wahtsapp .number-whatsapp {
   position: relative;
   display: block;
-  border: 2px solid #04d7ab;
+  border: 2px solid #fff;
   border-radius: 5px;
   padding: 1rem 0;
   margin: 0;
@@ -161,7 +203,7 @@ header .row .wahtsapp .number-whatsapp a {
           align-items: center;
   font-size: 2rem !important;
   width: 100%;
-  color: #04d7ab;
+  color: #fff;
   direction: ltr;
   letter-spacing: 1px;
   justify-content: center;
@@ -176,7 +218,7 @@ header .row .wahtsapp .number-whatsapp a ion-icon {
   padding-right: 10px !important;
   margin: 0;
   padding-top: 2px !important;
-  color: #04d7ab;
+  color: #fff;
 }
 
 header .row .header-content {
@@ -302,6 +344,19 @@ header .row .scrolldown span:nth-child(2) {
   color: #222 !important;
 }
 
+.nav.stickyadd .dropdown button {
+  color: #222;
+}
+
+.nav.stickyadd .dropdown .dropdown-content {
+  color: #222;
+}
+
+.nav.stickyadd .dropdown .dropdown-content a {
+  color: #222;
+  background: #fff;
+}
+
 .nav .navbar .navItems li a:hover,
 .nav .navbar .navItems li a.activee {
   color: #04d7ab;
@@ -344,6 +399,9 @@ header .row .scrolldown span:nth-child(2) {
   display: -ms-flexbox !important;
   display: flex !important;
   color: #5441df;
+  padding-bottom: 1rem;
+  border-bottom: 4px solid #04d7ab;
+  font-family: "El Messiri", sans-serif !important;
 }
 
 .about .content p {
@@ -377,21 +435,24 @@ header .row .scrolldown span:nth-child(2) {
 }
 
 .service .heder-service {
-  display: block;
-  padding-bottom: 5rem;
+  display: inline-block;
+  padding-bottom: 1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
   font-size: 2.5rem;
-  margin-bottom: 5rem;
+  margin-bottom: 8rem;
   color: #5441df;
-   padding: 10px;
+  border-bottom: 4px solid #04d7ab;
+  font-family: "El Messiri", sans-serif !important;
 }
 
 .service .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(24rem, 1fr))[auto-fit];
-      grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+  -ms-grid-columns: (minmax(30rem, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
   gap: 1.5rem;
-  gap: 2rem;
+  gap: 1rem;
   width: 100%;
 }
 
@@ -418,36 +479,13 @@ header .row .scrolldown span:nth-child(2) {
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
 }
 
-.service .container .box .fas {
-  position: absolute;
-  top: -37px;
-  left: 41.5%;
-  height: 70px;
-  width: 70px;
-  border: 0.5rem solid white;
-  background: #5441df;
-  border-radius: 50%;
-  color: #fff;
-  margin-bottom: 1.5rem;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  font-size: 35px;
-}
-
+.service .container .box .fas,
 .service .container .box .fab {
   position: absolute;
   top: -37px;
   left: 41.5%;
   height: 70px;
   width: 70px;
-  font-size: 35px;
   border: 0.5rem solid white;
   background: #5441df;
   border-radius: 50%;
@@ -462,6 +500,7 @@ header .row .scrolldown span:nth-child(2) {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-size: 35px;
 }
 
 .service .container .box h4 {
@@ -476,12 +515,52 @@ header .row .scrolldown span:nth-child(2) {
   font-size: 1.3rem;
 }
 
+@media (max-width: 1300px) {
+  .service .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(35rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    gap: 1.5rem;
+    gap: 2rem;
+  }
+}
+
+@media (max-width: 1260px) {
+  .contactUs {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(40rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(40rem, 1fr));
+    gap: 1.5rem;
+  }
+  .contactUs .container {
+    width: 100% !important;
+  }
+  .contactUs .container .container-form {
+    width: 400px;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  }
+  .contactUs .container .contact-services {
+    width: 300px !important;
+    -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  }
+  .contactUs .contact-services {
+    width: 100% !important;
+  }
+}
+
 @media (max-width: 991px) {
   html {
     font-size: 55%;
   }
   .header {
-    padding: 2rem;
+    padding: 2rem !important;
+  }
+  .header .nav {
+    padding: 2rem !important;
   }
   .header .content-box {
     color: #fff;
@@ -493,9 +572,6 @@ header .row .scrolldown span:nth-child(2) {
   .header .content-box h4 {
     font-size: 2rem !important;
     font-weight: normal !important;
-  }
-  section {
-    padding: 2rem;
   }
   .lottie {
     width: 500px !important;
@@ -521,6 +597,29 @@ header .row .scrolldown span:nth-child(2) {
   .nav.stickyadd .navbar a {
     color: #222 !important;
   }
+  .about .img-about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .service {
+    padding: 1rem 9%;
+  }
+}
+
+@media (max-width: 800px) {
+  .service {
+    padding: 3rem 0;
+  }
+  .service .container {
+    padding: 0 1rem !important;
+  }
 }
 
 @media (max-width: 768px) {
@@ -530,7 +629,6 @@ header .row .scrolldown span:nth-child(2) {
   }
   .navbar {
     width: 100%;
-    background: #fff !important;
     position: absolute;
     top: 99%;
     margin: 0;
@@ -538,6 +636,7 @@ header .row .scrolldown span:nth-child(2) {
     left: 0;
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
             clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    overflow: visible;
   }
   .navbar.active {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -549,21 +648,18 @@ header .row .scrolldown span:nth-child(2) {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
     margin: 0;
     padding: 0;
+    padding-bottom: 6rem !important;
     background: #073da1;
+    color: #fff;
+    height: auto;
+    overflow: visible;
     border-bottom: 0.3rem solid white;
-    z-index: 22222;
   }
   .navbar .navItems li {
     margin: 1.5rem;
@@ -584,6 +680,16 @@ header .row .scrolldown span:nth-child(2) {
   .navbar .navItems li a {
     color: #fff !important;
     font-size: 2.1rem;
+  }
+  .navbar .navItems .dropdown .dropbtn {
+    font-size: 2rem !important;
+  }
+  .navbar .navItems .dropdown .dropdown-content {
+    background: #fff;
+  }
+  .navbar .navItems .dropdown .dropdown-content a {
+    color: #222 !important;
+    font-size: 1.5rem;
   }
   .nav.stickyadd {
     background: #fff !important;
@@ -630,23 +736,39 @@ header .row .scrolldown span:nth-child(2) {
     padding: 3rem 0;
   }
   .service .container {
-    padding: 0 1rem;
+    padding: 0 1rem !important;
   }
   #contactUs {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: justify !important;
-        -ms-flex-pack: justify !important;
-            justify-content: space-between !important;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  #contactUs .container {
+    -webkit-box-pack: center !important;
+        -ms-flex-pack: center !important;
+            justify-content: center !important;
     -webkit-box-align: center !important;
         -ms-flex-align: center !important;
             align-items: center !important;
+  }
+  .contactUs {
+    width: 100% !important;
+  }
+  .contactUs .container {
+    width: 100%;
+  }
+  .contactUs .container .container-form {
+    width: 100% !important;
+  }
+  .contactUs .contact-services {
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 665px) {
+  .service .fas,
+  .service .fab {
+    position: absolute;
+    top: -37px !important;
+    left: 44% !important;
   }
 }
 
@@ -707,6 +829,12 @@ header .row .scrolldown span:nth-child(2) {
        object-fit: cover;
     padding: 10px;
   }
+  .service .fas,
+  .service .fab {
+    position: absolute;
+    top: -37px !important;
+    left: 41.5% !important;
+  }
 }
 
 #contactUs {
@@ -714,70 +842,61 @@ header .row .scrolldown span:nth-child(2) {
   background-size: cover;
   color: #000;
   width: 100%;
+  gap: 2rem;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
 
-#contactUs .container {
-  width: 280px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  background: #fff;
-  border-radius: 5px;
-}
-
-#contactUs .container .header-contactUs {
+#contactUs .header-contactUs {
   font-size: 2rem;
   border-bottom: 4px solid #04d7ab;
   margin-bottom: 30px;
   padding: 13px 0;
   color: #5441df;
+  display: inline-block;
+  font-family: "El Messiri", sans-serif !important;
 }
 
-#contactUs .container .textbox {
+#contactUs .container {
+  width: 600px;
+}
+
+#contactUs .container .container-form {
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(48, 46, 46, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(48, 46, 46, 0.1);
+  padding: 10px;
   width: 100%;
-  overflow: hidden;
+}
+
+#contactUs .container .container-form .textbox {
+  width: 100%;
   font-size: 20px;
   padding: 8px 0;
   margin: 8px 0;
-  border: 1px solid #5441df;
-  border-radius: 5px;
+  border-bottom: 1px solid #5441df;
   color: #222;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-#contactUs .container .textbox i {
-  width: 26px;
+#contactUs .container .container-form .textbox i {
   text-align: center;
+  font-size: 1.7rem;
   color: #222;
   padding: 0;
+  padding: 1rem;
   margin-right: 2px;
   display: inline-block;
 }
 
-#contactUs .container .textbox input {
+#contactUs .container .container-form .textbox input {
   background: none;
   color: #222;
   font-size: 18px;
@@ -785,66 +904,64 @@ header .row .scrolldown span:nth-child(2) {
   width: 100%;
 }
 
-#contactUs .container .textbox input::-webkit-input-placeholder {
+#contactUs .container .container-form .textbox input::-webkit-input-placeholder {
   padding: 10px;
   font-size: 1.5rem;
 }
 
-#contactUs .container .textbox input:-ms-input-placeholder {
+#contactUs .container .container-form .textbox input:-ms-input-placeholder {
   padding: 10px;
   font-size: 1.5rem;
 }
 
-#contactUs .container .textbox input::-ms-input-placeholder {
+#contactUs .container .container-form .textbox input::-ms-input-placeholder {
   padding: 10px;
   font-size: 1.5rem;
 }
 
-#contactUs .container .textbox input::placeholder {
+#contactUs .container .container-form .textbox input::placeholder {
   padding: 10px;
   font-size: 1.5rem;
 }
 
-#contactUs .container .textbox-area {
+#contactUs .container .container-form .textbox-area {
   width: 100%;
-  overflow: hidden;
   font-size: 20px;
   padding: 8px 0;
   margin: 8px 0;
-  border-radius: 5px;
   background: transparent;
-  border: 1px solid #5441df !important;
+  border-bottom: 1px solid #5441df;
 }
 
-#contactUs .container .textbox-area textarea {
+#contactUs .container .container-form .textbox-area textarea {
   width: 100%;
   height: 100px;
   border-radius: 5px;
 }
 
-#contactUs .container .textbox-area textarea::-webkit-input-placeholder {
+#contactUs .container .container-form .textbox-area textarea::-webkit-input-placeholder {
   padding: 10px;
   font-size: 1.5rem;
 }
 
-#contactUs .container .textbox-area textarea:-ms-input-placeholder {
+#contactUs .container .container-form .textbox-area textarea:-ms-input-placeholder {
   padding: 10px;
   font-size: 1.5rem;
 }
 
-#contactUs .container .textbox-area textarea::-ms-input-placeholder {
+#contactUs .container .container-form .textbox-area textarea::-ms-input-placeholder {
   padding: 10px;
   font-size: 1.5rem;
 }
 
-#contactUs .container .textbox-area textarea::placeholder {
+#contactUs .container .container-form .textbox-area textarea::placeholder {
   padding: 10px;
   font-size: 1.5rem;
 }
 
-#contactUs .container .btn {
+#contactUs .container .container-form .btn {
   width: 100%;
-  padding: 8px 0;
+  padding: 10px 0;
   margin: 8px 0;
   font-size: 1.5rem;
   color: #fff;
@@ -853,16 +970,32 @@ header .row .scrolldown span:nth-child(2) {
 }
 
 #contactUs .contact-services {
-  border: 1px solid #5441df;
   border-radius: 4px;
-  width: 280px;
-  margin-top: 10rem;
-  background: #5441df;
-  color: #fff;
+  margin-top: 8rem;
+  background: #fff;
+  color: #222;
+  -webkit-box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  width: 400px;
+  padding: 10px;
 }
 
 #contactUs .contact-services h3 {
   font-size: 2rem;
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid #5441df;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#contactUs .contact-services h3 p {
   padding-right: 1.4rem;
   padding-left: 1.4rem;
 }
@@ -877,8 +1010,10 @@ header .row .scrolldown span:nth-child(2) {
 }
 
 #contactUs .contact-services .box-services i {
-  display: block;
-  margin-top: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 1.6rem;
   font-size: large;
   padding-left: 1.4rem;
   padding-right: 1.4rem;
@@ -892,18 +1027,19 @@ header .row .scrolldown span:nth-child(2) {
 
 #contactUs .contact-services .box-services .box .link-ser {
   display: block;
-  color: #fff !important;
+  color: #222 !important;
 }
 
 #contactUs .contact-services .box-services .box .link-ser p {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 #contactUs .contact-services .box-services .box .link-ser p span {
-  color: #fff;
+  color: #222;
   font-size: 1.5rem;
   display: block;
   padding-top: 1.5rem;
+  font-weight: 700;
 }
 
 .credit {
@@ -925,6 +1061,8 @@ header .row .scrolldown span:nth-child(2) {
 
 .credit h3 {
   font-size: 1.5rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
 }
 
 .credit h3 span {
@@ -933,11 +1071,14 @@ header .row .scrolldown span:nth-child(2) {
 
 .credit h5 {
   font-size: 1.2rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
 }
 
 .credit .icons-footer i {
   color: #fff;
   font-size: large;
-  padding-left: 1rem;
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
 }
 /*# sourceMappingURL=style.css.map */

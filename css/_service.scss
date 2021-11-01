@@ -4,19 +4,21 @@
   height: auto;
 
   .heder-service {
-    display: block;
-    padding-bottom: 5rem;
+    display: inline-block;
+    padding-bottom: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
     font-size: 2.5rem;
-    margin-bottom: 5rem;
+    margin-bottom: 8rem;
     color: $stander-color;
-     padding: 40px;
+    border-bottom: 4px solid $green;
+    font-family: "El Messiri", sans-serif !important;
   }
 
   .container {
-    @include grid(24rem);
-    gap: 2rem;
+    @include grid(30rem);
+    gap: 1rem;
     width: 100%;
-
     .box {
       background: $stander-color;
       position: relative;
@@ -36,29 +38,13 @@
         box-shadow: $box-shadow;
       }
 
-      .fas {
-        position: absolute;
-        top: -37px;
-        left: 41.5%;
-        height: 70px;
-        width: 70px;
-        border: 0.5rem solid white;
-        background: $stander-color;
-        border-radius: 50%;
-        color: #fff;
-        margin-bottom: 1.5rem;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 35px;
-      }
+      .fas,
       .fab {
         position: absolute;
         top: -37px;
         left: 41.5%;
         height: 70px;
         width: 70px;
-        font-size: 35px;
         border: 0.5rem solid white;
         background: $stander-color;
         border-radius: 50%;
@@ -67,7 +53,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+        font-size: 35px;
       }
+
       h4 {
         margin-bottom: 1.5rem;
         font-size: 1.7rem;

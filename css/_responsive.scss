@@ -1,11 +1,43 @@
-// responsive
+//responsive
+@media (max-width: 1300px) {
+  .service {
+    .container {
+      @include grid(35rem);
+      gap: 2rem;
+    }
+  }
+}
+
+@media (max-width: 1260px) {
+  .contactUs {
+    @include grid(40rem);
+    .container {
+      width: 100% !important;
+      .container-form {
+        width: 400px;
+        box-shadow: $box-shadow;
+      }
+      .contact-services {
+        width: 300px !important;
+        box-shadow: $box-shadow;
+      }
+    }
+
+    .contact-services {
+      width: 100% !important;
+    }
+  }
+}
 @media (max-width: 991px) {
   html {
     font-size: 55%;
   }
 
   .header {
-    padding: 2rem;
+    padding: 2rem !important;
+    .nav {
+      padding: 2rem !important;
+    }
     .content-box {
       color: $white;
 
@@ -20,9 +52,6 @@
     }
   }
 
-  section {
-    padding: 2rem;
-  }
   .lottie {
     width: 500px !important;
     position: relative;
@@ -43,6 +72,28 @@
   .nav.stickyadd .navbar a {
     color: $black !important;
   }
+
+  .about {
+    .img-about {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+
+  .service {
+    padding: 1rem 9%;
+  }
+}
+
+@media (max-width: 800px) {
+  //  responsiv about
+  .service {
+    padding: 3rem 0;
+    .container {
+      padding: 0 1rem !important;
+    }
+  }
 }
 
 @media (max-width: 768px) {
@@ -53,13 +104,13 @@
 
   .navbar {
     width: 100%;
-    background: $white !important;
     position: absolute;
     top: 99%;
     margin: 0;
     padding: 0;
     left: 0;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    overflow: visible;
 
     &.active {
       clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
@@ -67,15 +118,15 @@
     }
     .navItems {
       display: flex;
-      justify-content: center;
-      align-items: center;
       flex-direction: column;
       margin: 0;
       padding: 0;
+      padding-bottom: 6rem !important;
       background: #073da1;
+      color: $white;
+      height: auto;
+      overflow: visible;
       border-bottom: $border;
-      z-index: 22222;
-
       li {
         margin: 1.5rem;
         padding: 1.5rem;
@@ -89,6 +140,18 @@
         a {
           color: $white !important;
           font-size: 2.1rem;
+        }
+      }
+      .dropdown {
+        .dropbtn {
+          font-size: 2rem !important;
+        }
+        .dropdown-content {
+          background: $white;
+          a {
+            color: $black !important;
+            font-size: 1.5rem;
+          }
         }
       }
     }
@@ -139,17 +202,37 @@
   .service {
     padding: 3rem 0;
     .container {
-      padding: 0 1rem;
+      padding: 0 1rem !important;
     }
   }
 
   #contactUs {
     display: flex;
-    justify-content: space-between !important;
-    align-items: center;
+    justify-content: center !important;
+    align-items: center !important;
+  }
 
+  .contactUs {
+    width: 100% !important;
     .container {
-      align-items: center !important;
+      width: 100%;
+      .container-form {
+        width: 100% !important;
+      }
+    }
+
+    .contact-services {
+      width: 100% !important;
+    }
+  }
+}
+@media (max-width: 665px) {
+  .service {
+    .fas,
+    .fab {
+      position: absolute;
+      top: -37px !important;
+      left: 44% !important;
     }
   }
 }
@@ -187,6 +270,15 @@
         object-fit: cover;
         padding: 10px;
       }
+    }
+  }
+
+  .service {
+    .fas,
+    .fab {
+      position: absolute;
+      top: -37px !important;
+      left: 41.5% !important;
     }
   }
 }

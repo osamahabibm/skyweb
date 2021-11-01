@@ -9,18 +9,23 @@
   align-items: center;
   h3 {
     font-size: 1.5rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
     span {
       color: $green;
     }
   }
   h5 {
     font-size: 1.2rem;
+    padding-left: 1.4rem;
+    padding-right: 1.4rem;
   }
   .icons-footer {
     i {
       color: $white;
       font-size: large;
-      padding-left: 1rem;
+      padding-left: 1.4rem;
+      padding-right: 1.4rem;
     }
   }
 }

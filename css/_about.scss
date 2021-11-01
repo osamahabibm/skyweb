@@ -14,6 +14,9 @@
       position: relative;
       display: flex !important;
       color: $stander-color;
+      padding-bottom: 1rem;
+      border-bottom: 4px solid $green;
+      font-family: "El Messiri", sans-serif !important;
     }
     p {
       font-size: 1.7rem;

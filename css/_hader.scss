@@ -74,7 +74,7 @@ header {
       .number-whatsapp {
         position: relative;
         display: block;
-        border: 2px solid $green;
+        border: 2px solid $white;
         border-radius: 5px;
         padding: 1rem 0;
         margin: 0;
@@ -88,7 +88,7 @@ header {
           align-items: center;
           font-size: 2rem !important;
           width: 100%;
-          color: $green;
+          color: $white;
           direction: ltr;
           letter-spacing: 1px;
           justify-content: center;
@@ -99,7 +99,7 @@ header {
             padding-right: 10px !important;
             margin: 0;
             padding-top: 2px !important;
-            color: $green;
+            color: $white;
           }
         }
       }
@@ -190,6 +190,20 @@ header {
   }
   #menu-btn {
     color: $black !important;
+  }
+
+  .dropdown {
+    button {
+      color: $black;
+    }
+
+    .dropdown-content {
+      color: $black;
+      a {
+        color: $black;
+        background: $white;
+      }
+    }
   }
 }
 // stickyadd-navbar End

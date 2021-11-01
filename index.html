@@ -33,9 +33,13 @@
             <li><a class="btn" href="#service">Service</a></li>
             <li><a class="btn" href="#contactUs">ContactUs</a></li>
             <li>
-              <a href="index-rtl.html"
-                >language <i class="fas fa-globe-europe"></i
-              ></a>
+              <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Language</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="index-rtl.html">Arabic</a>
+                  <a href="index.html">English</a>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
@@ -152,7 +156,7 @@
     <section class="contactUs" id="contactUs">
       <div class="container">
         <h1 class="header-contactUs">Connect with us</h1>
-        <form action="" method="get">
+        <form action="" method="get" class="container-form">
           <div class="textbox">
             <i class="fas fa-user"></i>
             <input type="text" placeholder="FullName" name="" id="" />
@@ -175,7 +179,10 @@
         </form>
       </div>
       <div class="contact-services">
-        <h3>Delivery Service 24/7</h3>
+        <h3>
+          <p><i class="fas fa-headset"></i></p>
+          Delivery Service 24/7
+        </h3>
         <div class="box-services">
           <div class="icons-contact"><i class="fab fa-whatsapp"></i></div>
           <div class="box">
@@ -224,7 +231,7 @@
         <a href="http://"> <i class="fab fa-twitter"></i></a>
         <a href="http://"> <i class="fab fa-instagram"></i></a>
       </div>
-      <h5>All rights reserved to Sky Web 2021 &copy;</h5>
+      <h5>All rights reserved 2021 &copy;</h5>
     </section>
     <!-- jQuery -->
     <script src="lib/jQuery.js"></script>
