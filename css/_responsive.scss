@@ -1,4 +1,12 @@
 //responsive
+@media (max-width: 1499px) {
+  .service {
+    .container {
+      @include grid(41rem);
+      gap: 2rem;
+    }
+  }
+}
 @media (max-width: 1300px) {
   .service {
     .container {

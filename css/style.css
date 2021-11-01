@@ -478,6 +478,17 @@ header .row .scrolldown span:nth-child(2) {
   font-size: 1.3rem;
 }
 
+@media (max-width: 1499px) {
+  .service .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (minmax(41rem, 1fr))[auto-fit];
+        grid-template-columns: repeat(auto-fit, minmax(41rem, 1fr));
+    gap: 1.5rem;
+    gap: 2rem;
+  }
+}
+
 @media (max-width: 1300px) {
   .service .container {
     display: -ms-grid;
