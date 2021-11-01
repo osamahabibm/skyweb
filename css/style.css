@@ -174,7 +174,7 @@ header .row .wahtsapp p {
 header .row .wahtsapp .number-whatsapp {
   position: relative;
   display: block;
-  border: 2px solid #fff;
+  border: 1px solid #fff;
   border-radius: 5px;
   padding: 1rem 0;
   margin: 0;
