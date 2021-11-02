@@ -24,6 +24,7 @@
       box-shadow: 0 0.5rem 1rem rgba(48, 46, 46, 0.1);
       padding: 10px;
       width: 100%;
+      border: 1px solid $green;
       .textbox {
         width: 100%;
         font-size: 20px;
@@ -75,12 +76,15 @@
         }
       }
       .btn {
+        display: block;
         width: 100%;
         padding: 10px 0;
-        margin: 8px 0;
-        font-size: 1.5rem;
+        margin: 20px 0;
+        font-size: 1.8rem;
+        font-weight: 600;
         color: $white;
-        border-radius: 5px;
+        border-radius: 4px;
+        cursor: pointer;
         background: $stander-color;
       }
     }
@@ -94,6 +98,7 @@
     box-shadow: $box-shadow;
     width: 400px;
     padding: 10px;
+    border: 1px solid $green;
     h3 {
       font-size: 2rem;
       padding-bottom: 1.4rem;

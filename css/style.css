@@ -631,26 +631,20 @@ header .row .scrolldown span:nth-child(2) {
     background: linear-gradient(45deg, #513bdb, #5645e2);
     color: #fff;
     border-bottom: 0.3rem solid white;
+    width: 100%;
   }
   .navbar .navItems li {
     margin: 1.2rem;
     padding: 1.2rem;
-    border-radius: 0.5rem;
-    width: 100%;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: start;
-        -ms-flex-pack: start;
-            justify-content: flex-start;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    width: 100% !important;
     color: #fff;
+    display: block;
   }
   .navbar .navItems li a {
     color: #fff !important;
     font-size: 2.1rem;
+    width: 100% !important;
+    display: block;
   }
   .nav.stickyadd {
     background: #fff !important;
@@ -833,6 +827,7 @@ header .row .scrolldown span:nth-child(2) {
           box-shadow: 0 0.5rem 1rem rgba(48, 46, 46, 0.1);
   padding: 10px;
   width: 100%;
+  border: 1px solid #04d7ab;
 }
 
 #contactUs .container .container-form .textbox {
@@ -921,12 +916,15 @@ header .row .scrolldown span:nth-child(2) {
 }
 
 #contactUs .container .container-form .btn {
+  display: block;
   width: 100%;
   padding: 10px 0;
-  margin: 8px 0;
-  font-size: 1.5rem;
+  margin: 20px 0;
+  font-size: 1.8rem;
+  font-weight: 600;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 4px;
+  cursor: pointer;
   background: #5441df;
 }
 
@@ -939,6 +937,7 @@ header .row .scrolldown span:nth-child(2) {
           box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
   width: 400px;
   padding: 10px;
+  border: 1px solid #04d7ab;
 }
 
 #contactUs .contact-services h3 {
