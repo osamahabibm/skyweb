@@ -56,25 +56,22 @@
           }
         }
       }
-      .textbox-area {
+
+      .textarea {
         width: 100%;
-        font-size: 20px;
+        height: 80px;
+        font-size: 1.5rem;
         padding: 8px 0;
         margin: 8px 0;
         background: transparent;
         border-bottom: 1px solid $stander-color;
-
-        textarea {
-          width: 100%;
-          height: 100px;
-          border-radius: 5px;
-
-          &::placeholder {
-            padding: 10px;
-            font-size: 1.5rem;
-          }
+        overflow: scroll !important;
+        &::placeholder {
+          padding: 10px;
+          font-size: 1.5rem;
         }
       }
+
       .btn {
         display: block;
         width: 100%;
